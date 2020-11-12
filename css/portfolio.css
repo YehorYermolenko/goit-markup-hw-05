@@ -352,8 +352,10 @@ ul {
   flex-wrap: wrap;
 }
 
-.examples-item-overflow:hover p,
-.examples-item-overflow:hover::before {
+.examples-item:hover p,
+.examples-item:hover::before,
+.examples-item:focus p,
+.examples-item:focus::before {
   opacity: 1;
   transform: translatey(0);
 }
@@ -376,6 +378,7 @@ ul {
   opacity: 0;
   transform: translatey(100%);
   transition: transform 250ms ease;
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .examples-item-overflow::before {
@@ -383,7 +386,7 @@ ul {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
+
   z-index: 1;
   opacity: 0;
   transform: translatey(100%);
