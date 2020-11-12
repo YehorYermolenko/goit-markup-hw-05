@@ -112,6 +112,7 @@ h6 {
   --logo-header: #000000;
   --title: #212121;
   --hero-bckgr: #2f303a;
+  --footer-social-back-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Body Header Footer */
@@ -142,6 +143,7 @@ header ul a:hover,
 header ul a:focus {
   color: var(--logo-web);
   fill: var(--logo-web);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active-page {
@@ -203,10 +205,6 @@ header ul a:focus {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-ul {
-  padding-inline-start: 0;
 }
 
 .header-container {
@@ -352,12 +350,13 @@ ul {
   flex-wrap: wrap;
 }
 
-.examples-item:hover p,
+.examples-item:hover .overflow-type,
 .examples-item:hover::before,
-.examples-item:focus p,
+.examples-item:focus .overflow-type,
 .examples-item:focus::before {
   opacity: 1;
   transform: translatey(0);
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .examples-item-overflow {
@@ -366,11 +365,15 @@ ul {
   overflow: hidden;
 }
 
+.overflow-type {
+  height: 100%;
+}
+
 .examples-item-overflow p {
   position: absolute;
   margin: 0;
   font-size: 18px;
-  padding: 63px 24px;
+  padding: 24px 24px;
   line-height: 1.56;
   color: var(--white);
   z-index: 2;
@@ -378,7 +381,6 @@ ul {
   opacity: 0;
   transform: translatey(100%);
   transition: transform 250ms ease;
-  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .examples-item-overflow::before {
@@ -386,7 +388,6 @@ ul {
   content: "";
   width: 100%;
   height: 100%;
-
   z-index: 1;
   opacity: 0;
   transform: translatey(100%);
@@ -494,7 +495,8 @@ ul {
   justify-content: center;
   border-radius: 50%;
   border: 1px solid transparent;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--footer-social-back-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-links-item {
@@ -510,6 +512,7 @@ ul {
   width: 20px;
   height: 20px;
   fill: var(--white);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-links-link:hover .footer-social-links-icon,
