@@ -115,6 +115,7 @@ h6 {
   --icon-color: #afb1b8;
   --feature-item-svg-bckgrnd: #f5f4fa;
   --footer-social-back-color: rgba(255, 255, 255, 0.1);
+  --modal-window-background: rgba(0, 0, 0, 0.2);
 }
 
 /* Body Header Footer */
@@ -267,6 +268,39 @@ header ul a:focus {
   font-size: 26px;
   line-height: 1.2;
   color: var(--logo-header);
+}
+
+/* Modal window */
+
+.backdrop .is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--modal-window-background);
+  z-index: 100;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+  visibility: visible;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  height: 581px;
+  background-color: #f7f7f7;
+  padding: 80px 40px;
+  transition: transform 0.5s;
 }
 
 /* Hero section */
