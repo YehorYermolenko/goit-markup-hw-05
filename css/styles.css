@@ -467,6 +467,7 @@ element .feature-item {
 
 .our-team {
   background-color: var(--feature-item-svg-bckgrnd);
+  padding-top: 94px;
 }
 
 .team-list {
@@ -564,6 +565,10 @@ element .feature-item {
 }
 
 /* Our Clients */
+
+.our-clients-section {
+  padding-top: 94px;
+}
 
 .our-clients-title {
   font-style: normal;
