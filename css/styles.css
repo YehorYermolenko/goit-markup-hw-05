@@ -272,7 +272,7 @@ header ul a:focus {
 
 /* Modal window */
 
-.backdrop .is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
