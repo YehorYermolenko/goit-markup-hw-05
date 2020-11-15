@@ -212,8 +212,7 @@ header ul a:focus {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  padding-top: 23px;
-  padding-bottom: 23px;
+  height: 80px;
 }
 
 .header-div {

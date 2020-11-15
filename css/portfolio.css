@@ -151,13 +151,15 @@ header ul a:focus {
 }
 
 .active-page::after {
-  display: block;
   content: "";
+  position: absolute;
+  display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: var(--logo-web);
-  position: absolute;
+  bottom: 0px;
+  bottom: -32px;
 }
 
 .mailtel-nav-mail-icon {
@@ -186,7 +188,7 @@ header ul a:focus {
 
 .section {
   padding-top: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 94px;
 }
 
 .container {
@@ -233,8 +235,6 @@ header ul a:focus {
 
 .site-nav a {
   color: var(--logo-header);
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .mailtel-nav {
