@@ -151,7 +151,6 @@ header ul a:focus {
 
 .active-page {
   position: relative;
-  /* padding-bottom: 0; */
 }
 
 .active-page::after {
@@ -238,8 +237,6 @@ header ul a:focus {
 
 .site-nav a {
   color: var(--logo-header);
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
 }
 
 .mailtel-nav {
