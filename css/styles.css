@@ -161,7 +161,8 @@ header ul a:focus {
   height: 4px;
   border-radius: 2px;
   background-color: var(--logo-web);
-  margin-top: 24px;
+  bottom: 0px;
+  bottom: -32px;
 }
 
 .mailtel-nav-mail-icon {
@@ -211,7 +212,8 @@ header ul a:focus {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  height: 80px;
+  padding-top: 23px;
+  padding-bottom: 23px;
 }
 
 .header-div {
