@@ -299,6 +299,21 @@ header ul a:focus {
   background-color: #f7f7f7;
   padding: 80px 40px;
   transition: transform 0.5s;
+  z-index: 50;
+}
+
+.modal-close-btn {
+  position: absolute;
+  display: flex;
+  top: 8px;
+  right: 8px;
+  background-color: var(--white);
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 0;
+  align-items: center;
+  height: 30px;
+  width: 30px;
 }
 
 /* Hero section */
